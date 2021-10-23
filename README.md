@@ -6,7 +6,7 @@ With the spirit of reproducible research, this repository includes a complete co
 
 ## Instruction to Perform Climate Analysis with Our knowledge Graph
 The process to get the results and pictures presented in the paper can be divided into the following two steps:
-### Step 1--Obtaining the data using SPARQL queries
+### Step 1&mdash;Obtaining the data using SPARQL queries
 In the paper, we demonstrated the weather comparison between Dublin (IE) and Manston (UK). The weather data for those two cities can be fetched by submitting the following two pieces of SPARQL queries to our [SPARQL endpoint](http://jresearch.ucd.ie/kg/dataset.html?tab=query&ds=/climate) :
 
 For Dublin's weather, use
@@ -45,5 +45,7 @@ where{
     qudt:numericValue ?fog.
   filter(year(?date)>1950 && year(?date)<1964).}
 ```
+The solutions of these two queries should be identical to the two pre-downloaded datasets `data/dublin.csv` and `data/manston.csv`.
 
+### Step 2&mdash;Weather Data Analysis through Python Notebook
 
