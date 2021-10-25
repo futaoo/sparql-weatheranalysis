@@ -5,9 +5,9 @@ With the spirit of reproducible research, this repository includes a complete co
 
 
 ## Instruction to Perform Climate Analysis with Our knowledge Graph
-The process to get the results and pictures presented in the paper can be divided into the following two steps:
+The process to get the results and pictures presented in the paper is separated into the two steps:
 ### Step 1&mdash;Obtaining the data using SPARQL queries
-In the paper, we demonstrated two kinds of weather analyses: 1) the average temperature comparison between Dublin (IE) and Manston (UK) and 2) Sculthorpe (UK) weather analyses in terms of various weather type. The weather data for those two cities can be fetched by submitting the following two pieces of SPARQL queries to our [SPARQL endpoint](http://jresearch.ucd.ie/kg/dataset.html?tab=query&ds=/climate) :
+We exhibited two distinct types of weather analysis in the paper: 1) a comparison of daily average temperatures between Dublin (IE) and Manston (UK), and 2) a weather analysis of Sculthorpe (UK) in terms of numerous weather types. You may get weather data for those two cities by making the following two SPARQL queries to our [SPARQL endpoint](http://jresearch.ucd.ie/kg/dataset.html?tab=query&ds=/climate) :
 
 For Dublin's and Manston's daily average temperature, use
 
@@ -45,7 +45,7 @@ where{
     qudt:numericValue ?fog.
   filter(year(?date)>1950 && year(?date)<1964).}
 ```
-where we only give the SPARQL query for weather type WT01&mdash;"Fog, ice fog, or freezing fog (may include heavy fog)". The complete set of code for all weather type and their meanings can be found in the following table.
+where we only provide the SPARQL query for weather type WT01, which is defined as "fog, ice fog, or freezing fog (may include dense fog)". The following table contains the entire set of codes for all weather types and their associated meanings.
 
 DATA TYPE | DESCRIPTION
 --- | ---
@@ -60,7 +60,7 @@ WT16 | Rain (may include freezing rain, drizzle, and freezing drizzle)
 WT18 | Snow, snow pellets, snow grains, or ice crystals
 
 
-The solutions of these queries should be identical to the two pre-downloaded datasets `data/dublin.csv`, `data/manston.csv` ...
+The solutions of these queries should be identical to the pre-downloaded datasets `data/dublin.csv`, `data/manston.csv` and etc. in the `data` folder.
 
 ### Step 2&mdash;Weather Data Analysis through Python Notebook
 See the in-line comments in the notebook `climate_analysis.ipynb`. The SPARQL query solutions as the raw data input and weather analyses snippets are indicated.
