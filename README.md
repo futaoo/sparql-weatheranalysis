@@ -63,5 +63,5 @@ WT18 | Snow, snow pellets, snow grains, or ice crystals
 The solutions of these queries should be identical to the pre-downloaded datasets `data/dublin.csv`, `data/manston.csv` and etc. in the `data` folder.
 
 ### Step 2&mdash;Weather Data Analysis through Python Notebook
-See the in-line comments in the notebook `climate_analysis.ipynb`. The SPARQL query solutions as the raw data input and weather analyses snippets are indicated.
+See the in-line comments in the notebook `climate_analysis.ipynb`. The loaded SPARQL query solutions as the raw data input and weather analyses snippets are indicated.
 
