@@ -45,7 +45,7 @@ where{
     qudt:numericValue ?fog.
   filter(year(?date)>1950 && year(?date)<1964).}
 ```
-where we only provide the SPARQL query for weather type WT01, which is defined as "fog, ice fog, or freezing fog (may include dense fog)". The following table contains the entire set of codes for all weather types and their associated meanings.
+where we only provide the SPARQL query for weather type WT01, which is defined as "fog, ice fog, or freezing fog (may include dense fog)". The following table contains the entire set of codes for all weather types and their associated meanings that can be used to identify other weather types for Sculthorpe (UK).
 
 DATA TYPE | DESCRIPTION
 --- | ---
